@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.password-display {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#password {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    background-color: #f9f9f9;
+}
+
+#copy-btn {
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#copy-btn:hover {
+    background-color: #2980b9;
+}
+
+.controls {
+    margin-bottom: 30px;
+}
+
+.length-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.length-control label {
+    margin-right: 10px;
+}
+
+.length-control input[type="range"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.options, .advanced-options {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.options label, .advanced-options label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#generate-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate-btn:hover {
+    background-color: #27ae60;
+}
+
+.strength-meter {
+    margin-top: 20px;
+}
+
+.strength-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.strength-text {
+    font-weight: bold;
+    text-align: center;
+}

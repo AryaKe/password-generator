@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Strong Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Super Strong Password Generator</h1>
+        
+        <div class="password-display">
+            <input type="text" id="password" readonly>
+            <button id="copy-btn">Copy</button>
+        </div>
+        
+        <div class="controls">
+            <div class="length-control">
+                <label for="length">Password Length:</label>
+                <input type="range" id="length" min="8" max="64" value="16">
+                <span id="length-value">16</span>
+            </div>
+            
+            <div class="options">
+                <label><input type="checkbox" id="uppercase" checked> Uppercase Letters (A-Z)</label>
+                <label><input type="checkbox" id="lowercase" checked> Lowercase Letters (a-z)</label>
+                <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+                <label><input type="checkbox" id="symbols" checked> Symbols (!@#$%^&*)</label>
+            </div>
+            
+            <div class="advanced-options">
+                <label><input type="checkbox" id="exclude-similar"> Exclude Similar Characters (i,l,1,L,o,0,O)</label>
+                <label><input type="checkbox" id="exclude-ambiguous"> Exclude Ambiguous Symbols ({ } [ ] ( ) / \ ' " ` ~ , ; : . < >)</label>
+            </div>
+            
+            <button id="generate-btn">Generate Password</button>
+        </div>
+        
+        <div class="strength-meter">
+            <div class="strength-bar"></div>
+            <div class="strength-text">Password Strength: </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
